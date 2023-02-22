@@ -21,11 +21,19 @@ export default function Pendulum() {
     const render = () => {
       context.clearRect(0, 0, canvas.width, canvas.height);
       force = mass * gravity * Math.sin(radian) * (-1); // -mg sin(angle)
-      radianA = force / length; // Accélération de l'angle
-      radianV += radianA; // Vitesse de l'angle
-      radian += radianV; // Angle
+      
+      /* Calcul de l'accélération de l'angle
+       en fonction de la force de rappel du
+       pendule et de la longueur du fil */
+      radianA = force / length;
 
-      radian *= 0.98; // Résistance aire
+      // Accélération de l'angle (variation de vitesse)
+      radianV += radianA;
+      // Vitesse de l'angle (variation de l'angle)
+      radian += radianV;
+
+      // Exemple de la résistance de l'air
+      radian *= 0.98;
 
       const x = length * Math.sin(radian);
       const y = length * Math.cos(radian);
