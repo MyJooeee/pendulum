@@ -1,1 +1,1 @@
-export { default as Pendulum } from './Pendulum.js'
+export { default as Pendulum } from './Pendulum.js';
