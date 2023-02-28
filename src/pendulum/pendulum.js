@@ -10,7 +10,7 @@ export default function Pendulum() {
     const context = canvas.getContext('2d');
     let animationFrameId;
 
-    const length = 50;
+    const length = 70;
     const gravity = 9.8;
     const mass = 1;
     let radian = Math.PI/2;
@@ -21,7 +21,7 @@ export default function Pendulum() {
     const render = () => {
       context.clearRect(0, 0, canvas.width, canvas.height);
       force = mass * gravity * Math.sin(radian) * (-1); // -mg sin(angle)
-      
+
       /* Calcul de l'accélération de l'angle
        en fonction de la force de rappel du
        pendule et de la longueur du fil */
@@ -50,13 +50,21 @@ export default function Pendulum() {
   const draw = (ctx, x, y) => {
     const originX = 150;
     const originY = 50;
+    const posX = originX + x;
+    const posY = originY + y
     ctx.beginPath(); // Start a new path
     ctx.moveTo(originX, originY); // Move the pen to
-    ctx.lineTo(originX + x, originY + y); // Draw a line to
+    ctx.lineTo(posX, posY); // Draw a line to
+    ctx.stroke(); // Render the path
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(posX, posY, 3, 0, 2 * Math.PI);
+    ctx.fill();
     ctx.stroke(); // Render the path
     ctx.closePath();
 
   };
 
-  return <canvas style={{ width: '700px',  height: '500px', border: '1px solid blue'}} ref={canvasRef} />;
+  return <canvas style={{ width: '700px',  height: '500px', border: '1px solid black'}} ref={canvasRef} />;
 }
