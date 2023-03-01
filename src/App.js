@@ -1,4 +1,4 @@
-import { Pendulum } from './Pendulum/index.js'
+import { Pendulum } from './Pendulum/index.js';
 
 function App() {
   return (
