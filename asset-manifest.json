@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pendulum/static/css/main.e6c13ad2.css",
+    "main.js": "/pendulum/static/js/main.c85bc849.js",
+    "static/js/787.82ba83bd.chunk.js": "/pendulum/static/js/787.82ba83bd.chunk.js",
+    "index.html": "/pendulum/index.html",
+    "main.e6c13ad2.css.map": "/pendulum/static/css/main.e6c13ad2.css.map",
+    "main.c85bc849.js.map": "/pendulum/static/js/main.c85bc849.js.map",
+    "787.82ba83bd.chunk.js.map": "/pendulum/static/js/787.82ba83bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c85bc849.js"
+  ]
+}
