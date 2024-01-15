@@ -1,9 +1,7 @@
-import { Pendulum } from './Pendulum/index.js';
+import Pendulum from "./Pendulum/index.js";
 
 function App() {
-  return (
-    <Pendulum />
-  );
+  return <Pendulum />;
 }
 
 export default App;
