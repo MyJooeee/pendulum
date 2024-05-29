@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { Divider, Stack, Typography } from "@mui/material";
+import backgroundImg from '../images/background.jpg';
 
 // ----------------------------------------------------------------------
 
@@ -68,11 +69,16 @@ const Pendulum = () => {
 
   return (
     <Stack
-      sx={{ alignItems: "center" }}
+      sx={{ 
+        alignItems: "center", 
+        backgroundImage: `url(${backgroundImg})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%',
+      }}
       divider={<Divider orientation="horizontal" flexItem />}
     >
       <Typography> Simple pendulum </Typography>
-      <canvas ref={canvasRef} width={400} height={300} />
+      <canvas ref={canvasRef} width={400} height={610} />
     </Stack>
   );
 };
