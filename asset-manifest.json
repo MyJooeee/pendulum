@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/pendulum/static/css/main.e6c13ad2.css",
-    "main.js": "/pendulum/static/js/main.c9ae4ce1.js",
-    "static/js/787.362e9e67.chunk.js": "/pendulum/static/js/787.362e9e67.chunk.js",
+    "main.js": "/pendulum/static/js/main.de29f966.js",
+    "static/js/453.0ef715b4.chunk.js": "/pendulum/static/js/453.0ef715b4.chunk.js",
+    "static/media/background.jpg": "/pendulum/static/media/background.488dbabab6faf199358e.jpg",
     "index.html": "/pendulum/index.html",
     "main.e6c13ad2.css.map": "/pendulum/static/css/main.e6c13ad2.css.map",
-    "main.c9ae4ce1.js.map": "/pendulum/static/js/main.c9ae4ce1.js.map",
-    "787.362e9e67.chunk.js.map": "/pendulum/static/js/787.362e9e67.chunk.js.map"
+    "main.de29f966.js.map": "/pendulum/static/js/main.de29f966.js.map",
+    "453.0ef715b4.chunk.js.map": "/pendulum/static/js/453.0ef715b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c9ae4ce1.js"
+    "static/js/main.de29f966.js"
   ]
 }
