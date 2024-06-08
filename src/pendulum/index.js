@@ -1,10 +1,11 @@
 import { useRef, useEffect } from "react";
-import { Divider, Stack, Typography } from "@mui/material";
+import { Container, Divider, Stack, Typography } from "@mui/material";
 import backgroundImg from '../images/background.jpg';
 
 // ----------------------------------------------------------------------
 
 const Pendulum = () => {
+  const appVersion = process.env.REACT_APP_VERSION;
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -68,18 +69,23 @@ const Pendulum = () => {
   };
 
   return (
-    <Stack
-      sx={{ 
-        alignItems: "center", 
-        backgroundImage: `url(${backgroundImg})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%',
-      }}
-      divider={<Divider orientation="horizontal" flexItem />}
-    >
-      <Typography> Simple pendulum </Typography>
-      <canvas ref={canvasRef} width={400} height={610} />
-    </Stack>
+    <Container maxWidth={false} disableGutters>
+      <Stack
+        sx={{ 
+          alignItems: "center", 
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '100%'
+        }}
+        divider={<Divider orientation="horizontal" flexItem />}
+        >
+        <Typography> Simple pendulum </Typography>
+        <canvas ref={canvasRef} width={400} height={610} />
+        <Typography variant='caption' sx={{ textAlign: 'center' }}>
+          © 2024 Jonathan Dancette, all rights reserved. | v{appVersion}
+        </Typography>
+      </Stack>
+    </Container>
   );
 };
 
